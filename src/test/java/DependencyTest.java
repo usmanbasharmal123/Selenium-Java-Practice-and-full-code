@@ -7,11 +7,12 @@ public class DependencyTest {
     public void TestA() {
         System.out.println("Test A");
     }
-    @Test
+    @Test()
     public void TestB() {
         System.out.println("Test B");
     }
     //wait uppto 40 second
+
     @Test(timeOut = 4000)
     public void TestC() {
         System.out.println("Test Timeout");

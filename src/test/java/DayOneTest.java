@@ -1,3 +1,4 @@
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class DayOneTest {
@@ -5,5 +6,6 @@ public class DayOneTest {
     @Test(groups={"groupTestExample"})
     public void testDayOne() {
         System.out.println("DayOne Test groupTestExample");
+        Assert.fail();
     }
 }

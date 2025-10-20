@@ -9,6 +9,13 @@ public class DataProviderTest {
         System.out.println("password: " + password);
     }
     @DataProvider
+    private Object[][] getData() {
+        return new Object[][]{
+                {"firstUser", "firstPassword"},
+                {"secondUser", "secondPassword"},
+                {"thirdUser", "thirdPassword"}
+        };
+    }
 //    public Object[][] getData(){
 //        Object[][] data = new Object[3][2];
 ////        first set
@@ -22,12 +29,6 @@ public class DataProviderTest {
 //        data[2][1]="thirdPassword";
 //        return data;
 //    }
-    private Object[][] getData() {
-        return new Object[][]{
-                {"firstUser", "firstPassword"},
-                {"secondUser", "secondPassword"},
-                {"thirdUser", "thirdPassword"}
-        };
-    }
+
 
 }

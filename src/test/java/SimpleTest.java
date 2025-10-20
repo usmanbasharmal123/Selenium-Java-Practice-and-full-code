@@ -1,6 +1,7 @@
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class SimpleTest {
@@ -29,6 +30,7 @@ public void beforeSuite(){
     @Test
     public void simpleTest() {
         System.out.println("Simple Test");
+
     }
     @Parameters({"URL"})
     @Test

@@ -1,7 +1,7 @@
 public class ParentClassWithConstructor extends GrandParentCLass {
     int value;   //this is class variable
     public ParentClassWithConstructor(int v){
-        super(v);
+        super(v);//parent class constructor is invoked (called)
         this.value=v;
         //in the above the variable is instance variable
     }
